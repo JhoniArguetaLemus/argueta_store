@@ -1,0 +1,175 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+header{
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    z-index: 999;
+
+}
+
+.logo-marca{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-marca img{
+  
+   position: relative;
+   top: 20px;
+   border: 1px solid black;
+}
+
+header #menu{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    padding: 1rem;
+    list-style: none;
+    transition: all .3s ease-in-out;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    transition: all .3s ease-in-out;
+   
+    
+}
+
+header nav ul li:hover
+{
+    background-color:rgb(165, 226, 226);
+
+
+
+}
+
+header nav ul li i{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.imagen-logo{
+    animation: animacion 2s ease-in-out   ;
+}
+
+
+
+@keyframes animacion {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.bienvenida{
+    
+
+    padding:2rem;
+    height: 1000px;
+
+    
+
+}
+
+@media screen and (max-width: 800px){
+   
+
+    header nav ul{
+    
+        flex-direction: column;
+    }
+
+    header nav{
+         display: none;
+         transition: all .3s ease-in-out;
+    }
+
+
+    .visible{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 70%;
+        margin-top: 60px;
+        background-color: azure;
+        min-height: 100vh;
+    }
+
+
+    
+
+    .logo-marca img{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-marca h1{
+        font-size: 20px;
+    }
+    
+    header #menu{
+        display: block;
+        width: 100px;
+        height: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+.damas{
+    background-image: url('https://previews.123rf.com/images/deagreez/deagreez1908/deagreez190800825/128477257-foto-de-cuerpo-entero-de-dos-estudiantes-pequeños-y-dos-damas-usan-ropa-casual-aislado-fondo-rosa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.caballeros{
+    background-image: url('https://img.freepik.com/fotos-premium/tres-hombres-jovenes-ropa-casual-posando-calle_105609-6693.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ninos{
+    background-image: url('https://childrens-spaces.com/wp-content/uploads/2019/02/moda-infantil.jpg');
+   background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.productos button{
+    position: relative;
+    top: 20px;
+}
